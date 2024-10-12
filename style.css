@@ -1,0 +1,72 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, sans-serif;
+    background-color: #f9f9f9; /* Light gray */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #ffffff; /* White */
+}
+
+h1 {
+    font-size: 3.5rem;
+    color: #333333; /* Charcoal */
+    margin-bottom: 20px;
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+    margin: 20px auto;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #E0F7FA; /* Light Mint */
+    border: 2px solid #B0BEC5; /* Light Gray */
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cell:hover {
+    background-color: #B2EBF2; /* Hover Color */
+    transform: scale(1.05);
+}
+
+#restart {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    color: #ffffff; /* White */
+    background-color: #009688; /* Teal */
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#restart:hover {
+    background-color: #00796B; /* Darker Teal */
+}
+
+#status {
+    margin-top: 20px;
+    font-size: 2.5rem;
+    color: #D32F2F; /* Alert Red */
+}
